@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BresumeB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="assets/images/cv.png">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const yearSpan = document.getElementById('current-year');
+                yearSpan.textContent = new Date().getFullYear();
+            });
+        </script>
+    </head>
+    <body>
+
+        <nav class="navbar bg-white">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="brand-and-toggler">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="assets/images/cv.png" alt="" class="navbar-brand-icon">
+                            <span class="navbar-brand-text">BresumeB</span>
+                        </a>
+                        <button type="button" class="navbar-toggler-btn">
+                            <div class="bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="header bg-bright" id="header">
+            <div class="container">
+                <div class="header-content text-center">
+                    <!-- <h6 class="text-uppercase text-blue-dark fs-14 fw-6 ls-1">online resume builder</h6> -->
+                    <h1 class="lg-title">Only a small fraction of resumes catch an employer’s eye in the first round.🔍</h1>
+                    <p class="text-dark fs-18">Ensure yours stands out by using our professional, field-tested resume templates. Designed to meet the exact criteria employers seek, our easy-to-use tools will help you create an impressive resume quickly.</p>
+                    <a href="res.html" class="btn btn-primary text-uppercase">create my resume</a>
+                    <a href="#next-section" class="scroll-down">
+                        <img src="assets/images/downarrow.png" alt="Scroll Down">
+                    </a>
+                    
+                    <img src="assets/images/photo.png">
+                </div>
+            </div>
+        </header>
+
+        <div class="section-one">
+            <div class="container">
+                <div class="section-one-content">
+                    <div class="section-one-l">
+                        <img src="assets/images/visual-0c7080adf17f1f207276f613447c924f667dab34b7ac415cd7ef653172defd0b.svg">
+                    </div>
+                    <div class="section-one-r text-center">
+                        <h2 class="lg-title">Use the best resume maker as your guide!</h2>
+                        
+                        <p class="text">Getting that dream job can seem like an impossible task. We're here to change that. Give yourself a real advantage with the best online resume maker: created by experts, improved by data, trusted by millions of professionals.</p>
+                        <div class="btn-group">
+                            <a href="res.html" class="btn btn-primary text-uppercase">create my resume</a>
+                            <a href="about.html" class="btn btn-secondary text-uppercase">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-two bg-bright" id="next-section">
+            <div class="container">
+                <div class="section-two-content">
+                    <div class="section-items">
+                        <div class="section-item">
+                            <div class="section-item-icon">
+                                <img src="assets/images/trophy.png" alt="">
+                            </div>
+                            <h5 class="section-item-title">Make a resume that wins interviews!</h5>
+                            <p class="text">Use our resume maker with its advanced creation tools to tell a professional story that engages recruiters, hiring managers, and even CEOs.</p>
+                        </div>
+
+                        <div class="section-item">
+                            <div class="section-item-icon">
+                                <img src="assets/images/growth.png" alt="">
+                            </div>
+                            <h5 class="section-item-title">Resume writing made easy!</h5>
+                            <p class="text">Resume writing has never been this effortless. Pre-generated text, visual designs, and more - all already integrated into the resume maker. Just fill in your details.</p>
+                        </div>
+
+                        <div class="section-item">
+                            <div class="section-item-icon">
+                                <img src="assets/images/objective.png" alt="">
+                            </div>
+                            <h5 class="section-item-title">A recruiter-tested CV maker tool</h5>
+                            <p class="text">Our resume builder and its pre-generated content are tested by recruiters and IT experts. We help your CV become truly competitive in the hiring process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <p class="fs-15">&copy;Copyright <span id="current-year"></span>. All Rights Reserved - <span>BresumeB</span></p>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

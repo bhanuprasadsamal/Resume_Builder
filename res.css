@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --clr-dark: #1e2532;
+    --clr-grey: #656e83;
+    --clr-white: #fff;
+    --clr-bright: #eff2f9;
+    --clr-blue: #1A91F0;
+    --transition: all 300ms ease-in-out;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-poppins);
+    font-size: 1.6rem;
+    background-color: var(--clr-bright);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--clr-white);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the brand text */
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
+    position: relative;
+}
+
+.navbar-back {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-back-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--clr-dark);
+}
+
+.navbar-brand-text {
+    text-align: center;
+}
+
+
+/* Header */
+.header {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    padding: 2rem;
+    text-align: center;
+}
+
+.header .lg-title {
+    font-size: 2.8rem;
+}
+
+@media (min-width: 768px) {
+    .header .lg-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .header .lg-title {
+        font-size: 4rem;
+    }
+}
+
+/* Teams Section */
+.teams-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.team-container {
+    background-color: var(--clr-white);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.team-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.team-name {
+    font-size: 2rem;
+    color: var(--clr-dark);
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .teams-section .container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .team-container {
+        flex: 1;
+    }
+
+    .team-image {
+        height: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .team-container {
+        margin-bottom: 0;
+    }
+
+    .team-image {
+        height: 350px;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
+    text-align: center;
+    padding: 2rem 0;
+}

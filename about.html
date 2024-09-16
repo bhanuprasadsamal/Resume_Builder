@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BresumeB</title>
+    <link rel="icon" type="image/png" href="assets/images/cv.png">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-back">
+                <img src="assets/images/previous.png" alt="Back to Home" class="navbar-back-icon">
+            </a>
+            <div class="navbar-brand">
+                <span class="navbar-brand-text">About Us</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="header">
+    <div class="container">
+        <div class="header-content text-center">
+            <h1 class="lg-title">About Us</h1>
+            <p class="text-dark fs-18">Learn more about our mission, vision, and the team behind BresumeB.</p>
+        </div>
+    </div>
+</header>
+
+
+    <div class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h1>Our Mission</h1>
+                <p>At BresumeB, we are committed to equipping job seekers with innovative and powerful resume-building tools that enhance their professional profiles. Our goal is to provide resources that not only simplify the resume creation process but also help you make a lasting impression in a competitive job market, paving the way for you to land your ideal career opportunity.</p>
+                
+                <h1>Our Vision</h1>
+                <p>We envision a world where everyone has access to high-quality resume-building tools that simplify the job application process and increase their chances of success. We strive to be the go-to platform for resume creation and career advancement.</p>
+                
+                <h1>Meet the Team</h1>
+                <p>Our team is composed of experienced professionals who are passionate about career development and technology. We bring together expertise in resume writing, design, and software development to create a platform that meets the needs of job seekers worldwide.</p>
+
+                <img src="assets/images/teams.jpeg" alt="Our Team">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="fs-15">&copy;Copyright <span id="current-year"></span>. All Rights Reserved - <span>BresumeB</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const yearSpan = document.getElementById('current-year');
+            yearSpan.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
